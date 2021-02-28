@@ -1,4 +1,6 @@
 ---
+title: Page Title
+description: Just another description you can use for this page in particular.
 layout: base.njk
 ---
 
