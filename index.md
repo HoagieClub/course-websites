@@ -1,14 +1,12 @@
 ---
-title: Page Title
+title: Hello, Course Websites!
 description: Just another description you can use for this page in particular.
 layout: base.njk
 ---
 
-# Hello, Course Websites!
-
 > Just a block quote. This is a really run on sentence to show that a block quote will continue onto the next line if the available width is narrow enough otherwise it will stay on the same line of the page if it is able to.
 
-## Text
+### Text
 
 *This text will be italic*
 _This will also be italic_
@@ -18,7 +16,7 @@ __This will also be bold__
 
 _You **can** combine them_
 
-## Lists
+### Lists
 
 Sometimes you want numbered lists:
 
@@ -38,7 +36,7 @@ Alternatively,
   - Like this
   - And this
 
-## Code
+### Code
 
 Here is an example of `inline code`
 
@@ -52,13 +50,13 @@ function fancyAlert(arg) {
 }
 ```
 
-## Tables
+### Tables
 
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
-## Images
+### Images
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
