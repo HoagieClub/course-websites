@@ -2,6 +2,9 @@
 title: Hello, Course Websites!
 description: Just another description you can use for this page in particular.
 layout: base.njk
+eleventyNavigation:
+  key: Home
+  order: 0
 ---
 
 > Just a block quote. This is a really run on sentence to show that a block quote will continue onto the next line if the available width is narrow enough otherwise it will stay on the same line of the page if it is able to.
