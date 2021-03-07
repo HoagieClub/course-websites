@@ -1,5 +1,9 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {
-    
+    // Register plugins
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
     // Pass through static files to output
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("css");

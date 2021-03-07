@@ -1,4 +1,14 @@
 <header>
     <h1>{{ metadata.title }}</h1>
     <h2>{{ title }}</h2>
+    <nav>
+        {% set navPages = collections.all | eleventyNavigation %}
+        <ul>
+            {%- for entry in navPages %}
+                <li>
+                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                </li>
+            {%- endfor %}
+        </ul>
+    </nav>
 </header>
