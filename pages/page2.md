@@ -1,6 +1,5 @@
 ---
 title: Second Page
-layout: page.njk
 eleventyNavigation:
   key: Second Page
   order: 1
