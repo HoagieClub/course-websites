@@ -1,7 +1,7 @@
 ---
 title: Hello, Course Websites!
 description: Just another description you can use for this page in particular.
-layout: page.njk
+permalink: "/"
 eleventyNavigation:
   key: Home
   order: 0
