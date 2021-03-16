@@ -2,6 +2,10 @@
 
 > Repo for the Hoagie Course Websites team
 
+## Demo
+
+* [Cloudflare Pages](https://855d46d2.course-websites.pages.dev/)
+
 ## Tools
 
 - [Eleventy](https://www.11ty.dev/)
