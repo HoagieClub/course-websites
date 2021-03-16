@@ -1,10 +1,10 @@
 <nav>
-    {% set navPages = collections.assignments | eleventyNavigation %}
-    <ul>
-      {%- for entry in navPages %}
-        <li>
-          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-  </ul>
+  {% set navPages = collections.assignments | eleventyNavigation %}
+  <ol>
+    {%- for entry in navPages %}
+      <li>
+        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
+  </ol>
 </nav>
