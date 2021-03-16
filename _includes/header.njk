@@ -1,7 +1,7 @@
 <header>
     <span>{{ metadata.title }}</span>
     <nav>
-        {% set navPages = collections.all | eleventyNavigation %}
+        {% set navPages = collections.pages | eleventyNavigation %}
         <ul>
             {%- for entry in navPages %}
                 <li>
