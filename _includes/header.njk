@@ -1,13 +1,22 @@
 <header>
-    <span>{{ metadata.title }}</span>
-    <nav>
-        {% set navPages = collections.pages | eleventyNavigation %}
-        <ul>
-            {%- for entry in navPages %}
-                <li>
-                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-                </li>
-            {%- endfor %}
-        </ul>
+    <nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
+        <div class="container is-max-widescreen">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ '/' | url }}"">{{ metadata.title }}</a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    {% set navPages = collections.pages | eleventyNavigation %}
+                    {%- for entry in navPages %}
+                        <a class="navbar-item" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    {%- endfor %}
+                </div>
+            </div>
+        </div>
     </nav>
 </header>

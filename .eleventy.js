@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
     // Pass through static files to output
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("js");
     
     return {
         // These are all optional, defaults are shown:

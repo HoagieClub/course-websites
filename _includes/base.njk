@@ -9,10 +9,14 @@
         <title>{{ metadata.title }}</title>
         {% endif %}
         <meta name="description" content="{{ description or metadata.description }}">
+        <link rel="stylesheet" href="{{ '/css/bulma.css' | url }}">
     </head>
-    <body>
+    <body class="Site">
         {% include "header.njk" %}
-        {{ content | safe }}
+        <main class="Site-content">
+            {{ content | safe }}
+        </main>
         {% include "footer.njk" %}
+        <script src="{{ '/js/menu.js' | url }}"></script>
     </body>
 </html>
