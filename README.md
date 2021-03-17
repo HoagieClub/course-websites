@@ -4,7 +4,7 @@
 
 ## Demo
 
-* [Cloudflare Pages](https://855d46d2.course-websites.pages.dev/)
+* [Cloudflare Pages](https://course-websites.pages.dev/)
 
 ## Tools
 
