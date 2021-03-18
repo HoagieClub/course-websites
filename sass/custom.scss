@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+// Set your brand colors
+$p-orange: #EE7F2D;
+$p-orange-hover: #994400;
+$p-black: #221E20;
+$p-gray-5: #7F7F83;
+$p-gray-10: #BDBEC1;
+
+// Update Bulma's global variables
+$primary: $p-orange;
+$link: $p-orange;
+$link-hover:$p-orange-hover;
+$black: $p-black;
+
+// Enable sticky footer
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.Site-content {
+    flex: 1;
+}
+
+@import "../node_modules/bulma/bulma.sass";
