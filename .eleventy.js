@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     // Pass through static files to output
-    eleventyConfig.addPassthroughCopy("img");
+    eleventyConfig.addPassthroughCopy("static");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     

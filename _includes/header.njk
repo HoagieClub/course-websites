@@ -2,7 +2,10 @@
     <nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
         <div class="container is-max-widescreen">
             <div class="navbar-brand">
-                <a class="navbar-item" href="{{ '/' | url }}"">{{ metadata.title }}</a>
+                <a class="navbar-item" href="/">
+                    <img src="/static/shield.png" style="max-height: 36px;">
+                    <span class="is-size-4 has-text-weight-semibold ml-1">{{ metadata.title }}</span>
+                </a>
                 <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -10,10 +13,10 @@
                 </a>
             </div>
             <div class="navbar-menu" id="navMenu">
-                <div class="navbar-start">
+                <div class="navbar-end">
                     {% set navPages = collections.pages | eleventyNavigation %}
                     {%- for entry in navPages %}
-                        <a class="navbar-item" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                        <a class="navbar-item has-text-weight-semibold {{ 'is-active' if entry.url == page.url }}" href="{{ entry.url | url }}">{{ entry.title }}</a>
                     {%- endfor %}
                 </div>
             </div>
