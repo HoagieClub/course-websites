@@ -13,6 +13,16 @@ $link: $p-orange;
 $link-hover:$p-orange-hover;
 $black: $p-black;
 
+// Custom navbar
+.navbar {
+    border-bottom: 4px solid $p-orange;
+}
+
+// Custom footer
+.footer {
+    border-top: 4px solid $p-orange;
+}
+
 // Enable sticky footer
 .Site {
     display: flex;
