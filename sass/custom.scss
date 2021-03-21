@@ -34,4 +34,15 @@ $black: $p-black;
     flex: 1;
 }
 
+// Custom content tables
+.content table {
+    display: block;
+    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+}
+
 @import "../node_modules/bulma/bulma.sass";

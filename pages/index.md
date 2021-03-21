@@ -55,10 +55,11 @@ function fancyAlert(arg) {
 
 ## Tables
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header  | Second Header | Third Header | Fourth Header | Fifth Header | Sixth Header | Seventh Header |
+| :-----------: | :-----------: | :----------: | :-----------: | :----------: | :----------: | :-----------:  |
+| First row     | First row     | First row    | First row     | First row    | First row    | First row      |
+| Second row    | Second row    | Second row   | Second row    | Second row   | Second row   | Second row     |
+| Third row     | Third row     | Third row    | Third row     | Third row    | Third row    | Third row      |
 
 ## Images
 
