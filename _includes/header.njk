@@ -16,7 +16,7 @@
                 <div class="navbar-end">
                     {% set navPages = collections.pages | eleventyNavigation %}
                     {%- for entry in navPages %}
-                        <a class="navbar-item has-text-weight-semibold {{ 'is-active' if entry.url == page.url }}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                        <a class="navbar-item has-text-weight-semibold {{ 'is-active' if (entry.url in page.url and entry.url != '/') or (entry.url == page.url) }}" href="{{ entry.url | url }}">{{ entry.title }}</a>
                     {%- endfor %}
                 </div>
             </div>
