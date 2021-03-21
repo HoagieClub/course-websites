@@ -46,6 +46,7 @@ Here is an example of `inline code`
 Here is a code block:
 
 ```javascript
+// This is a comment
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
