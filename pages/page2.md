@@ -1,7 +1,7 @@
 ---
-title: Second Page
+title: "Second Page"
 eleventyNavigation:
-  key: Second Page
+  key: "Second Page"
   order: 1
 ---
 

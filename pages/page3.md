@@ -1,7 +1,7 @@
 ---
-title: Third Page
+title: "Third Page"
 eleventyNavigation:
-  key: Third Page
+  key: "Third Page"
   order: 2
 ---
 

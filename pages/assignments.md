@@ -1,8 +1,8 @@
 ---
 templateEngineOverride: njk, md
-title: Assignments
+title: "Assignments"
 eleventyNavigation:
-  key: Assignments
+  key: "Assignments"
   order: 3
 ---
 

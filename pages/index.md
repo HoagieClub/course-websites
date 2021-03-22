@@ -1,9 +1,9 @@
 ---
-title: Hello, Course Websites!
-description: Just another description you can use for this page in particular.
+title: "Hello, Course Websites!"
+description: "Just another description you can use for this page in particular."
 permalink: "/"
 eleventyNavigation:
-  key: Home
+  key: "Home"
   order: 0
 ---
 
