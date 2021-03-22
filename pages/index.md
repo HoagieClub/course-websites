@@ -45,22 +45,26 @@ Here is an example of `inline code`
 
 Here is a code block:
 
-```javascript
-// This is a comment
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
+``` js/2/4
+// this is a command
+function myCommand() {
+  let counter = 0;
+
+	counter++;
+
 }
+
+// Test with a line break above this line.
+console.log('Test');
 ```
 
 ## Tables
 
-| First Header  | Second Header | Third Header | Fourth Header | Fifth Header | Sixth Header | Seventh Header |
-| :-----------: | :-----------: | :----------: | :-----------: | :----------: | :----------: | :-----------:  |
-| First row     | First row     | First row    | First row     | First row    | First row    | First row      |
-| Second row    | Second row    | Second row   | Second row    | Second row   | Second row   | Second row     |
-| Third row     | Third row     | Third row    | Third row     | Third row    | Third row    | Third row      |
+| First Header | Second Header | Third Header | Fourth Header | Fifth Header | Sixth Header | Seventh Header |
+| :----------: | :-----------: | :----------: | :-----------: | :----------: | :----------: | :------------: |
+|  First row   |   First row   |  First row   |   First row   |  First row   |  First row   |   First row    |
+|  Second row  |  Second row   |  Second row  |  Second row   |  Second row  |  Second row  |   Second row   |
+|  Third row   |   Third row   |  Third row   |   Third row   |  Third row   |  Third row   |   Third row    |
 
 ## Images
 

@@ -1,16 +1,16 @@
 @charset "utf-8";
 
 // Set your brand colors
-$p-orange: #EE7F2D;
+$p-orange: #ee7f2d;
 $p-orange-hover: #994400;
-$p-black: #221E20;
-$p-gray-5: #7F7F83;
-$p-gray-10: #BDBEC1;
+$p-black: #221e20;
+$p-gray-5: #7f7f83;
+$p-gray-10: #bdbec1;
 
 // Update Bulma's global variables
 $primary: $p-orange;
 $link: $p-orange;
-$link-hover:$p-orange-hover;
+$link-hover: $p-orange-hover;
 $black: $p-black;
 
 // Custom navbar
@@ -29,7 +29,6 @@ $black: $p-black;
     min-height: 100vh;
     flex-direction: column;
 }
-  
 .Site-content {
     flex: 1;
 }
@@ -43,6 +42,57 @@ $black: $p-black;
     width: max-content;
     max-width: 100%;
     overflow: auto;
+}
+
+// Code formatting triage
+.content {
+    .number,
+    .tag {
+        align-items: inherit;
+        background-color: inherit;
+        border-radius: inherit;
+        color: inherit;
+        display: contents;
+        font-size: inherit;
+        height: inherit;
+        justify-content: inherit;
+        line-height: inherit;
+        margin-right: inherit;
+        min-width: inherit;
+        padding: inherit;
+        text-align: inherit;
+        vertical-align: inherit;
+        white-space: inherit;
+    }
+}
+.highlight-line {
+    display: inline-block;
+    padding: 0.125em 1em;
+    text-decoration: none;
+    color: inherit;
+}
+.highlight-line:empty:before {
+    content: " ";
+}
+.highlight-line:not(:last-child) {
+    min-width: 100%;
+}
+.highlight-line .highlight-line:not(:last-child) {
+    min-width: 0;
+}
+.highlight-line-isdir {
+    color: #b0b0b0;
+    background-color: #222;
+}
+.highlight-line-active {
+    background-color: #444;
+    background-color: hsla(0, 0%, 27%, 0.8);
+}
+.highlight-line-add {
+    background-color: #45844b;
+}
+.highlight-line-remove {
+    background-color: #902f2f;
 }
 
 @import "../node_modules/bulma/bulma.sass";
