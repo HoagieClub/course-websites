@@ -11,10 +11,10 @@ module.exports = function (eleventyConfig) {
 
     // Custom filters
     eleventyConfig.addFilter("readableDate", dateObj => {
-        return DateTime.fromJSDate(dateObj).toFormat("ccc, MMM d 'at' t ZZZZ");
+        return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat("ccc, MMM d 'at' t ZZZZ");
     });
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-        return DateTime.fromJSDate(dateObj);
+        return DateTime.fromJSDate(dateObj, { zone: "America/New_York" });
     });
 
     // "HH 'hours and' mm 'minutes'"
