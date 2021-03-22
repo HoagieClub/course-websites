@@ -1,6 +1,9 @@
 .navbar {
   border-bottom: 4px solid #ee7f2d; }
 
+.navbar-item.is-active {
+  color: #ee7f2d !important; }
+
 .footer {
   border-top: 4px solid #ee7f2d; }
 
@@ -19,7 +22,8 @@
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  white-space: nowrap; }
 
 .content .number,
 .content .tag {
@@ -39,9 +43,11 @@
   vertical-align: inherit;
   white-space: inherit; }
 
+pre[class*="language-"] {
+  padding: 1.5em !important; }
+
 .highlight-line {
   display: inline-block;
-  padding: 0.125em 1em;
   text-decoration: none;
   color: inherit; }
 
@@ -67,6 +73,21 @@
 
 .highlight-line-remove {
   background-color: #902f2f; }
+
+.direct-link {
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 0.1em; }
+
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent; }
+
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #ee7f2d; }
 
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -1959,16 +1980,16 @@ div.icon-text {
     border-bottom-width: 1px; }
   .table.is-fullwidth {
     width: 100%; }
-  .table.is-hoverable tbody tr:not(.is-selected):hover {
+  .table.is-hoverable tbody tr:not(.is-selected):hover, .content table tbody tr:not(.is-selected):hover {
     background-color: #fafafa; }
-  .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
+  .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover, .content table tbody tr:not(.is-selected):hover {
     background-color: #fafafa; }
-    .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even) {
+    .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even), .content table tbody tr:not(.is-selected):hover:nth-child(even) {
       background-color: whitesmoke; }
   .table.is-narrow td,
   .table.is-narrow th {
     padding: 0.25em 0.5em; }
-  .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+  .table.is-striped tbody tr:not(.is-selected):nth-child(even), .content table tbody tr:not(.is-selected):nth-child(even) {
     background-color: #fafafa; }
 
 .table-container {

@@ -17,6 +17,9 @@ $black: $p-black;
 .navbar {
     border-bottom: 4px solid $p-orange;
 }
+.navbar-item.is-active {
+    color: $p-orange !important;
+}
 
 // Custom footer
 .footer {
@@ -42,6 +45,9 @@ $black: $p-black;
     width: max-content;
     max-width: 100%;
     overflow: auto;
+    white-space: nowrap;
+    @extend .table.is-striped;
+    @extend .table.is-hoverable;
 }
 
 // Code formatting triage
@@ -65,9 +71,11 @@ $black: $p-black;
         white-space: inherit;
     }
 }
+pre[class*="language-"] {
+    padding: 1.5em !important;
+}
 .highlight-line {
     display: inline-block;
-    padding: 0.125em 1em;
     text-decoration: none;
     color: inherit;
 }
@@ -93,6 +101,23 @@ $black: $p-black;
 }
 .highlight-line-remove {
     background-color: #902f2f;
+}
+
+// direct links and markdown anchors
+.direct-link {
+    text-decoration: none;
+    font-style: normal;
+    margin-left: 0.1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+    color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+    color: $p-orange;
 }
 
 @import "../node_modules/bulma/bulma.sass";
