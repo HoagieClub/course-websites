@@ -5,7 +5,7 @@
   "main": "sass/custom.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css-build": "node-sass --omit-source-map-url --output-style compressed sass/style.scss src/styles/style.css",
+    "css-build": "node-sass src/styles -o build/styles --output-style compressed",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-build && eleventy",
     "serve": "npm run css-build && eleventy --serve"
