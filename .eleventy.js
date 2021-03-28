@@ -17,12 +17,10 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "America/New_York" });
     });
 
-    // "HH 'hours and' mm 'minutes'"
-
     // Pass through static files to output
-    eleventyConfig.addPassthroughCopy("static");
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy("./src/static");
+    eleventyConfig.addPassthroughCopy("./src/styles");
+    eleventyConfig.addPassthroughCopy("./src/scripts");
 
     // Customize Markdown library and settings:
     let markdownLibrary = markdownIt({
@@ -37,12 +35,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLibrary);
 
     return {
-        // These are all optional, defaults are shown:
         dir: {
-            input: ".",
-            includes: "_includes",
-            data: "_data",
-            output: "_site"
+            input: "./src",
+            output: "./build"
         }
     };
 };

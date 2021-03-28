@@ -9,8 +9,8 @@
         <title>{{ metadata.title }}</title>
         {% endif %}
         <meta name="description" content="{{ description or metadata.description }}">
-        <link rel="stylesheet" href="{{ '/css/custom.css' | url }}">
-        <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/style.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/prism-base16-monokai.dark.css' | url }}">
     </head>
     <body class="Site has-navbar-fixed-top">
         {% include "header.njk" %}
