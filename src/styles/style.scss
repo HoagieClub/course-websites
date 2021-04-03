@@ -39,14 +39,14 @@ $navbar-height: 4rem;
 
 // Custom content tables
 .content table {
-    display: block;
-    width: 100%;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 100%;
-    overflow: auto;
-    white-space: nowrap;
+    // display: block;
+    // width: 100%;
+    // width: -webkit-max-content;
+    // width: -moz-max-content;
+    // width: max-content;
+    // max-width: 100%;
+    // overflow: auto;
+    // white-space: nowrap;
     @extend .table.is-striped;
     @extend .table.is-hoverable;
 }
