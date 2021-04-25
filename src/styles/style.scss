@@ -14,6 +14,11 @@ $link-hover: $p-orange-hover;
 $black: $p-black;
 $navbar-height: 4rem;
 
+// Fix anchor links being hidden by sticky nav
+[id] {
+    scroll-margin-top: 6rem;
+}
+
 // Custom navbar
 .navbar {
     border-bottom: 4px solid $p-orange;
